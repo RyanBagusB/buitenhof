@@ -31,11 +31,6 @@ closeButtons.forEach((closeButton) => {
   });
 });
 
-// button.addEventListener('click', (event) => {
-//   event.stopPropagation();
-//   drawer.classList.toggle('open');
-// });
-
 content.addEventListener('click', (event) => {
   event.stopPropagation();
   drawer.classList.remove('open');

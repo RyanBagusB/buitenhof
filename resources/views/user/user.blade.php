@@ -22,9 +22,9 @@
             </button>
           </li>
           <li>
-            <button>
+            <a href="/">
               <i class="fa-solid fa-circle-info"></i>
-            </button>
+            </a>
           </li>
         </ul>
       </nav>
@@ -133,11 +133,12 @@
               </tr>
             </tbody>
           </table>
-          <button>Pesan</button>
+          <a href="/order-detail">Pesan</a>
         </div>
       </div>
     </main>
 
+    @include('user.footer')
     @vite(['resources/js/user/user.js'])
   </body>
 </html>

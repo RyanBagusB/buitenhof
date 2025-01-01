@@ -30,6 +30,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'AvenirLTProBlack', 'Segoe UI';
+  text-decoration: none;
 }
 
 .font-organetto {
@@ -52,7 +53,8 @@
   gap: 1rem;
 }
 
-.app-bar ul li button {
+.app-bar ul li button,
+.app-bar ul li a {
   background-color: transparent;
   color: var(--dark-green);
   border: none;
@@ -123,6 +125,10 @@ section.menu-detail {
   display: flex;
   flex-direction: column;
   gap: .8rem;
+}
+
+.carousel__slider__container__item__caption button {
+  white-space: nowrap;
 }
 
 .popup-menu-detail-content button,
@@ -578,13 +584,14 @@ figure.second {
   display: none;
 }
 
-.popup-cart__content__footer button {
+.popup-cart__content__footer a {
   color: #FFFFFF;
   background-color: var(--light-green);
   border: none;
   padding: .6rem;
   border-radius: 1rem;
   font-size: 1.1rem;
+  text-align: center;
 }
 
 .summary-table {
